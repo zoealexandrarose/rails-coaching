@@ -1,10 +1,16 @@
 <h1>Stupid Coach</h1>
 
-<p>Your question:</p>
+<div class="question">
 <%= @question %>
+<p><em>-You</em></p>
+</div>
+<br>
+<div class="answer">
+<%= @response %>
+<p><em>-Your Coach</em></p>
+</div>
 
-<p>Answer:</p>
-<%= @return %>
+
 <br>
-<br>
-<%= link_to "Ask again", ask_path %>
+
+<p><%= link_to "Ask again", ask_path, class:"ask-again" %></p>
